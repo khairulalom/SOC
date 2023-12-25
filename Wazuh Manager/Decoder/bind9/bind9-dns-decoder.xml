@@ -1,4 +1,5 @@
-<!--    **** Sample Bind9 Log  ****
+<!--    **** Sample Bind9 Log    ****
+         ***Author: Khairul Alom ***
 
 19-Dec-2023 07:12:14.770 queries: info: client @0x7f6ae0796998 192.168.1.252#34124 (dragate-sg.dc.heytapmobi.com): query: dragate-sg.dc.heytapmobi.com IN A + (192.168.0.200)
 19-Dec-2023 07:12:04.014 queries: info: client @0x7f6ae00a34a8 192.168.1.252#65374 (secure.statcounter.com): query: secure.statcounter.com IN AAAA + (192.168.0.200)
