@@ -1,5 +1,5 @@
 # Open-Source Based SOC: A Future of Empowerment
-The future of SOCs is open-source, and this project is your gateway to that future. Embrace the cost-effectiveness, flexibility, and community-driven power to build a security watchtower that empowers your organization to stand tall against the ever-evolving threats of the digital age.
+The future of SOCs is open-source, and this project is your gateway to that future. Embrace the cost-effectiveness, flexibility, and community-driven power to build a security watchtower that empowers your organization to stand tall against the ever-evolving threats of the digital age. My Project Designed for Security Analysts and all SOC audiences who wants to play with implementation and explore the Modern SOC architecture.Here used all the tools/components are Open-Source based and fully free of costs.
 ## Why Open-Source?
 Building an open-source SOC doesn't mean compromising on functionality.There's a plethora of powerful tools available to cover all aspects of security operations. Open source brings transparency, flexibility, and a vibrant community to the table, offering several advantages:
 * Cost-Effective: Ditch the hefty price tags and embrace free, community-driven tools. Security shouldn't be a privilege reserved for the financially fortified.
@@ -23,6 +23,15 @@ My project is fully open source based and it is not just a collection of tools; 
 * Security Orchestration and Response(SOAR): Shuffle automates incident response workflows, streamlining investigation and remediation.
 * Case Management: TheHive is very powerfull tools to generates and keep tracks of security case events.
 * Vulnerability Management: OpenVAS scans systems for vulnerabilities, while Nessus offers in-depth vulnerability assessment.
+
+## SOC Architecture:
+
+![SOC architecture](https://github.com/archanchoudhury/SOC-OpenSource/raw/main/images/simpler-soc.png)
+
+## Components:
+
+
+## Installation-Requirements:
 
 
 
