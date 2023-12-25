@@ -1,0 +1,20 @@
+<!--    **** Sample Bind9 Log  ****
+
+19-Dec-2023 07:12:14.770 queries: info: client @0x7f6ae0796998 192.168.1.252#34124 (dragate-sg.dc.heytapmobi.com): query: dragate-sg.dc.heytapmobi.com IN A + (192.168.0.200)
+19-Dec-2023 07:12:04.014 queries: info: client @0x7f6ae00a34a8 192.168.1.252#65374 (secure.statcounter.com): query: secure.statcounter.com IN AAAA + (192.168.0.200)
+19-Dec-2023 07:11:59.994 queries: info: client @0x7f6ae870fc68 192.168.0.69#45703 (api.segment.io): query: api.segment.io IN AAAA +E(0) (192.168.0.200)
+19-Dec-2023 07:11:48.945 queries: info: client @0x7f6ae00a34a8 192.168.0.170#53801 (hooks.slack.com): query: hooks.slack.com IN A +E(0) (192.168.0.200)
+
+19-Dec-2023 07:12:15.210 queries: info: client @0x7f6ae870fc68 192.168.1.252#62981 (phosphor-pa.googleapis.com): query: phosphor-pa.googleapis.com IN HTTPS + (192.168.0.200)
+
+-->
+
+<decoder name="bind9-dns">
+  <prematch>queries: info: </prematch>
+</decoder>
+
+<decoder name="bind9-dns-log1">
+  <parent>bind9-dns</parent>
+  <regex offset="after_parent">client \S+ (\S+)#\d+ \(\S+\): query: (\S+) \S+ (\S+) \S+ \((\S+)\)</regex>
+  <order>srcip, address, type, server</order>
+</decoder>
