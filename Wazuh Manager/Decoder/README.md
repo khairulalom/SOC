@@ -8,6 +8,7 @@ Customize the Wazuh decoders to fit your needs and enhance detection capabilitie
 ## Add New Custom Decoder
 To add new custom decoder in wazuh, you may add new file at `/var/ossec/etc/decoders/local_decoder.xml` or go to wazuh manager UI and nevigate Managements>Decoders>Custom decoders
 ![add decoder](./images/custom_decoder.png)
+
 After that then click on add new decoder button to add you new custom decoder.
 ![add decoder](./images/custom_decoder1.png)
 In this time, I'm giving you a little hints about the syntax of custom log decoder. but you have to write your own code blocks to fullfill your need. I am also adding my own written custom decoder for a specific endpoints log. so you may use that or rewrite them according to your needs.
