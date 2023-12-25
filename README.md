@@ -26,7 +26,7 @@ My project is fully open source based and it is not just a collection of tools; 
 
 ## SOC Architecture:
 
-![SOC architecture](https://github.com/archanchoudhury/SOC-OpenSource/raw/main/images/simpler-soc.png)
+![SOC architecture](./images/SOC_architecture.png)
 
 ## Basic Components:
 * **Wazuh Manager SIEM:** Open source SIEM platform powered by Wazuh Server, ELK stack, Kibana.
