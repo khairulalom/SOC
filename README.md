@@ -46,7 +46,7 @@ In the above components are sufficient but further more if you want to enrich yo
 * Snort: SNORT is an open-source intrusion detection and prevention system that provides real-time network traffic analysis and data packet logging.
 
 ## Installation-Requirements:
-I have created the environment in Proxmox VE. You can follow along or choose any other alternative cloud provider like AWS. Or ever you can utilize EKS to deploy the full setup. And all the components are resources very hungry and depends on your usages like how many assets are gonna monitor, how much data you want to proceed and so on. Here I am giving you a minimal requirements needed to run every components.
+I have created the environment in Proxmox VE. You can follow along or choose any other alternative cloud provider like AWS. Or ever you can utilize EKS to deploy the full setup. And all the components are very resources hungry and depends on your usages like how many assets you gonna monitor, how much data you want to proceed and so on. So here I am giving you a basic idea about minimal requirements needed to run every components.
 | Components   | OS | CPU | RAM|
 |-------|------|------|------|
 |Wazuh Manager | ubuntu22.04 | 8 Core | 16 GB|
