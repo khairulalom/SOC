@@ -10,4 +10,17 @@ To add new custom decoder in wazuh, you may add new file at `/var/ossec/etc/deco
 ![add decoder](./images/custom_decoder.png)
 After that then click on add new decoder button to add you new custom decoder.
 ![add decoder](./images/custom_decoder1.png)
+In this time, I'm giving you a little hints about the syntax of custom log decoder. but you have to write your own code blocks to fullfill your need. I am also adding my own written custom decoder for a specific endpoints log. so you may use that or rewrite them according to your needs.
+Sample decoding code like this:
+```
+<decoder name="example">
+  <program_name>^example</program_name>
+</decoder>
 
+<decoder name="example">
+  <parent>example</parent>
+  <regex>User '(\w+)' logged from '(\d+.\d+.\d+.\d+)'</regex>
+  <order>user, srcip</order>
+</decoder>
+```
+> Note: Before use custom decoder as permanant, you must test it.
