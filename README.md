@@ -40,10 +40,12 @@ My project is fully open source based and it is not just a collection of tools; 
 
 ## Additional Components: 
 In the above components are sufficient but further more if you want to enrich your arsenal, then you may add the following tools:
+* ***Snort:*** SNORT is an open-source intrusion detection and prevention system that provides real-time network traffic analysis and data packet logging.
 * ***OPNSense:*** OPNsense is an open source, FreeBSD-based firewall and routing software developed by Deciso, a company in the Netherlands that makes hardware and sells support packages for OPNsense. Its a very powerfull Tools for Network regulations.
 * ***Velociraptor:*** Velociraptor is an advanced digital forensic and incident response tool that enhances your visibility into your endpoints.
+* * ***Cuckoo Sanbox:*** Cuckoo Sandbox is the leading open source automated malware analysis system that automated the task of analyzing any malicious file under Windows, macOS, Linux, and Android.
 * ***Prometheus:*** Prometheus is a systems and service monitoring system. It collects metrics from configured targets at given intervals, evaluates rule expressions, displays the results, and can trigger alerts when specified conditions are observed.
-* ***Snort:*** SNORT is an open-source intrusion detection and prevention system that provides real-time network traffic analysis and data packet logging.
+
 
 ## Installation-Requirements:
 I have created the environment in Proxmox VE. You can follow along or choose any other alternative cloud provider like AWS. Or ever you can utilize EKS to deploy the full setup. And all the components are very resources hungry and depends on your usages like how many assets you gonna monitor, how much data you want to proceed and so on. So here I am giving you a basic idea about minimal requirements needed to run every components.
