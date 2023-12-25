@@ -28,10 +28,32 @@ My project is fully open source based and it is not just a collection of tools; 
 
 ![SOC architecture](https://github.com/archanchoudhury/SOC-OpenSource/raw/main/images/simpler-soc.png)
 
-## Components:
+## Basic Components:
+* Wazuh Manager SIEM: Open source SIEM platform powered by Wazuh Server, ELK stack, Kibana.
+* TheHive4: TheHive is a scalable 3-in-1 open source and free Security Incident Response Platform designed to make life easier for SOCs, CSIRTs, CERTs and any information security practitioner dealing with security incidents that need to be investigated and acted upon swiftly.
+* Cortex: Cortex, an open source and free software, has been created by TheHive Project for this very purpose. Observables, such as IP and email addresses, URLs, domain names, files or hashes, can be analyzed one by one or in bulk mode using a Web interface. Analysts can also automate these operations thanks to the Cortex REST API.
+* MISP: MISP is an open source software solution for collecting, storing, distributing and sharing cyber security indicators and threats about cyber security incidents analysis and malware analysis. MISP is designed by and for incident analysts, security and ICT professionals or malware reversers to support their day-to-day operations to share structured information efficiently.
+* OpenCTI: OpenCTI is an open source platform allowing organizations to manage their cyber threat intelligence knowledge and observables. It has been created in order to structure, store, organize and visualize technical and non-technical information about cyber threats.
+* Shuffle SOAR: Shuffle is an automation platform for and by the community, focusing on accessibility for anyone to automate. Security operations is complex, but it doesn't have to be.
+* Suricata : Suricata is the foremost Open Source Intrusion Prevention System (IPS) in the world.
+*  Zabbix: Zabbix is an open-source software tool to monitor IT infrastructure such as networks, servers, virtual machines, and cloud services. Zabbix collects and displays basic metrics to get you better insight about you Network infrustuctures.
 
+## Additional Components: 
+In the above components are sufficient but further more if you want to enrich your arsenal, then you may add the following tools:
+* OPNSense: OPNsense is an open source, FreeBSD-based firewall and routing software developed by Deciso, a company in the Netherlands that makes hardware and sells support packages for OPNsense. Its a very powerfull Tools for Network regulations.
+* Velociraptor: Velociraptor is an advanced digital forensic and incident response tool that enhances your visibility into your endpoints.
+* Prometheus: Prometheus is a systems and service monitoring system. It collects metrics from configured targets at given intervals, evaluates rule expressions, displays the results, and can trigger alerts when specified conditions are observed.
+* Snort: SNORT is an open-source intrusion detection and prevention system that provides real-time network traffic analysis and data packet logging.
 
 ## Installation-Requirements:
+I have created the environment in Proxmox VE. You can follow along or choose any other alternative cloud provider like AWS. Or ever you can utilize EKS to deploy the full setup. And all the components are resources very hungry and depends on your usages like how many assets are gonna monitor, how much data you want to proceed and so on. Here I am giving you a minimal requirements needed to run every components.
+| Components   | OS | CPU | RAM|
+|-------|------|------|------|
+|Wazuh Manager | ubuntu22.04 | 8 Core | 16 GB|
+|TheHive| ubuntu22.04 | 4 Core | 8 GB |
+|Cortex| ubuntu22.04 | 4 Core | 8 GB |
+|Shuffle| ubuntu22.04 | 6 Core | 8 GB |
+|OpenCTI| ubuntu22.04 | 8 Core | 12 GB |
 
 
 
